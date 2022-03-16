@@ -1,0 +1,70 @@
+body{
+    background-color: khaki;
+}
+
+*{
+    font-family: 'Teko', sans-serif;
+    background-color: honeydew;
+}
+
+h3{
+    text-align: center;
+}
+h3::first-letter{
+    font-size: xx-large;
+}
+h3::after{
+    content: url("images/favicon.ico");
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabelaSeletores{
+    text-align: justify;
+}
+#tabelaCombinadores{
+    text-align: justify;
+}
+
+a{
+    color: blue;
+}
+a[target="blank_"]{
+    color: darkred;
+}
+a:hover{
+    color: gold;
+}
+
+div table{
+    background-color: yellow;
+}
+
+div ~ tr{
+    text-align: justify;
+}
+
+div + td{
+    color: crimson;
+}
+
+#pom{
+    background-color: cyan;
+}
+
+#html5Descricao::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+#cssDescricao::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+
