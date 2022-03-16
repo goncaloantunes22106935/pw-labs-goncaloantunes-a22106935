@@ -17,8 +17,11 @@ h3::after{
     content: url("images/favicon.ico");
 }
 
-.footer {
-  background-color: aquamarine;
+footer {
+    background-color: aquamarine;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tabelaSeletores{
@@ -36,9 +39,6 @@ a[target="blank_"]{
 }
 a:hover{
     color: gold;
-}
-a[target="blank_"]{
-    color: purple;
 }
 
 div table{
