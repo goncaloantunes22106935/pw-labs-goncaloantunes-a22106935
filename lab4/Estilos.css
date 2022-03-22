@@ -1,0 +1,197 @@
+*{
+            box-sizing: border-box;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        *:not(.texto){
+            font-family: 'Bungee', cursive;
+        }
+        *:not(.destinos){
+
+        }
+
+        .capitais {
+            display: flex;                   /* Caixas dispostas em linha e a fazer quebra de linha se for preciso */
+            background-color: darkseagreen;     /* Espaça horizontalmente os itens entre si de forma igual */
+            flex-flow: row wrap;             /* Espaça verticalmente os itens entre si de forma igual */
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .capitais > div{
+            /* Este seletor identifica todos os elementos div "filhos" do elemento com classe capitais */
+            display: flex;
+            justify-content: space-around;      /* Espaça os itens de forma igual */
+            border-radius: 20px;                /* Arredonda os cantos */
+            box-shadow: 5px 5px 15px #888888;   /* Cria sombra */
+            margin: 10px;                       /* Garante um espaçamento mínimo entre os elementos */
+        }
+
+        .capitais img{
+            /* Este seletor identifica todas as imagens dentro do elemento com classe capitais
+            (elementos imagem dentro de elemento com classe capitais) */
+            border-radius: 20px 0 0 20px;   /* Arredonda o primeiro canto (sup. esq.) e quarto canto */
+            height: 100%;
+        }
+
+        .capitais div div:last-child{
+            /* Este seletor identifica os divs com o páragrafo com nome da capital
+            (último div filho de cada div dentro do elemento com classe capitais) */
+            width: 150px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 0 20px 20px 0;   /* Arredonda o segundo e terceiro cantos */
+
+            /* Para centrar o nome da capital na xaica horizontal e vertical */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu{
+            display: flex;
+        }
+
+        .menu a{
+            padding: 20px;
+            background-color: darkseagreen;
+            margin: 2px;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px 3px 3px lightgrey;
+            border-radius: 5px;
+        }
+
+        .menu a:hover{
+            background-color: forestgreen;
+            font-weight: bold;
+        }
+
+        .menu a:last-child{
+            margin-left: auto;
+            background-color: forestgreen;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .menu a:last-child:hover{
+            background-color: darkgreen;
+            font-weight: bold;
+        }
+
+
+        header{
+            background-image: url("images/nuvens.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+        }
+
+        .texto {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Bungee', cursive;
+        }
+
+        .fundo{
+            background-image: url("images/nuvens.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .dicas{
+            display: flex;                   /* Caixas dispostas em linha e a fazer quebra de linha se for preciso */
+            background-color: darkseagreen;     /* Espaça horizontalmente os itens entre si de forma igual */
+            flex-flow: row wrap;             /* Espaça verticalmente os itens entre si de forma igual */
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .dicas div{
+            background-color: darkseagreen;
+            display: flex;
+            padding: 5px;
+            margin: 2px;
+        }
+        .dicas div div{
+            padding: 20px;
+            background-color: white;
+            margin: 2px;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px 3px 3px lightgrey;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .alentejo{
+            grid-area: alentejo;
+            background-image: url("images/alentejo.jpg");
+        }
+        .cuba{
+            grid-area: cuba;
+            background-image: url("images/cuba.jpg");
+        }
+        .times{
+            grid-area: times;
+            background-image: url("images/timessquare.jpg");
+        }
+        .porto{
+            grid-area: porto;
+            background-image: url("images/porto.jpg");
+        }
+        .vegas{
+            grid-area: vegas;
+            background-image: url("images/vegas.jpg");
+        }
+        .mochila{
+            grid-area: mochila;
+            background-image: url("images/mochila.jpg");
+            background-size: auto;
+        }
+        .budget{
+            grid-area: budget;
+            background-color: darkseagreen;
+            display: flex;
+        }
+
+        .destinos{
+            display: grid;
+            background-color: darkseagreen;
+            grid-template-areas:
+                'alentejo cuba vegas mochila mochila'
+                'alentejo cuba vegas mochila mochila'
+                'porto porto times mochila mochila'
+                'porto porto times budget budget';
+            gap: 10px;
+            padding: 10px;
+            height: 1000px;
+            width: 1880px;
+        }
+
+        .destinos div {
+            text-align: left;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-repeat: no-repeat;
+        }
+
+        #botao{
+            margin-left: auto;
+            background-color: forestgreen;
+            color: white;
+            box-shadow: 2px 3px 3px lightgrey;
+            border-radius: 10px;
+            height: 90px;
+            width: 140px;
+            text-align: center;
+            justify-items: center;
+            text-decoration: none;
+        }
+        #botao:hover{
+            background-color: darkgreen;
+            font-weight: bold;
+        }
