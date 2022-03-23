@@ -170,13 +170,23 @@
 
         @media (min-width: 901px){
             .destinos{
-
                 grid-template-areas:
                     'alentejo cuba vegas mochila mochila'
                     'alentejo cuba vegas mochila mochila'
                     'porto porto times mochila mochila'
                     'porto porto times budget budget';
                 gap:1px;
+            }
+        }
+
+        @media(max-width: 900px){
+            .destinos{
+                grid-template-areas:
+                        'alentejo cuba'
+                        'vegas times'
+                        'porto porto'
+                        'mochila budget';
+                gap: normal;
             }
         }
 
