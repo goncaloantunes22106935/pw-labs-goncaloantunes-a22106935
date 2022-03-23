@@ -128,70 +128,108 @@
         .alentejo{
             grid-area: alentejo;
             background-image: url("images/alentejo.jpg");
+            background-size: cover;
         }
         .cuba{
             grid-area: cuba;
             background-image: url("images/cuba.jpg");
+            background-size: cover;
         }
         .times{
             grid-area: times;
             background-image: url("images/timessquare.jpg");
+            background-size: cover;
         }
         .porto{
             grid-area: porto;
             background-image: url("images/porto.jpg");
+            background-size: cover;
         }
         .vegas{
             grid-area: vegas;
             background-image: url("images/vegas.jpg");
+            background-size: cover;
         }
         .mochila{
             grid-area: mochila;
             background-image: url("images/mochila.jpg");
-            background-size: auto;
+            background-size: cover;
         }
         .budget{
             grid-area: budget;
             background-color: darkseagreen;
-            display: flex;
+
+            background-size: cover;
         }
 
         .destinos{
             display: grid;
             background-color: darkseagreen;
-            grid-template-areas:
-                'alentejo cuba vegas mochila mochila'
-                'alentejo cuba vegas mochila mochila'
-                'porto porto times mochila mochila'
-                'porto porto times budget budget';
-            gap: 10px;
             padding: 10px;
-            height: 1000px;
-            width: 1880px;
         }
 
-        .destinos div {
+        @media (min-width: 901px){
+            .destinos{
+
+                grid-template-areas:
+                    'alentejo cuba vegas mochila mochila'
+                    'alentejo cuba vegas mochila mochila'
+                    'porto porto times mochila mochila'
+                    'porto porto times budget budget';
+                gap:1px;
+            }
+        }
+
+        .destinos > div {
             text-align: left;
-            padding: 20px;
+            padding: 10px;
             font-size: 20px;
             border-radius: 10px;
             color: white;
-            background-repeat: no-repeat;
+            min-height: 450px;
+            margin: 10px;
         }
 
         #botao{
-            margin-left: auto;
+            position: absolute;
+            padding: 20px;
+            margin: 2px;
+            text-decoration: none;
+            box-shadow: 2px 3px 3px lightgrey;
             background-color: forestgreen;
             color: white;
-            box-shadow: 2px 3px 3px lightgrey;
             border-radius: 10px;
-            height: 90px;
-            width: 140px;
-            text-align: center;
-            justify-items: center;
-            text-decoration: none;
+            right: 100px;
         }
+
         #botao:hover{
             background-color: darkgreen;
             font-weight: bold;
+        }
+
+        .pais{
+            position: absolute;
+            color: white;
+        }
+        .terra{
+            position: relative;
+            top: 320px;
+        }
+        .precos{
+            position: relative;
+            top: 300px;
+        }
+        .limitado{
+            position: absolute;
+        }
+        .inter{
+            position: relative;
+            justify-content: left;
+            top: 35px;
+        }
+        .carrega{
+            position: relative;
+            justify-content: left;
+            top: 100px;
+            left: 0px;
         }
